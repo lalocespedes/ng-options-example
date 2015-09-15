@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<select class="form-control" name="invoice_unidad" ng-options="item.username for item in main.all" ng-model="main.user"></select>
+
+<br>
+
+<div class="text-center"> <h4>{{ main.user.id }} </h4> </div>
+
+<hr>
+
+<select class="form-control" ng-options="value for (name, value) in main.metodopago" ng-model="main.payment_method"></select>
+
+<br>
+
+<div class="text-center"> <h4>{{ main.payment_method }} </h4> </div>
